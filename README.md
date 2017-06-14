@@ -1,10 +1,10 @@
 # JS-Fundamentals
 
-## Requirements [done]
+## Requirements
 1. Node.js
 2. Git
 
-## Steps [done]
+## Steps
 1. > npm install -g gulp
 
 2. > npm install
