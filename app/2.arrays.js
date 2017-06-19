@@ -25,10 +25,10 @@ console.log('Arrays');
 // Task 03
 // Создать массив. Обойти элементы массива и вывести их в консоль.
 
-//const arr = [1,2,3,4]
-//arr.forEach(function(element){
-    //console.log(element);
-//});
+// const arr = [1,2,3,4]
+// arr.forEach(function(element){
+//     console.log(element);
+// });
 
 
 
@@ -267,6 +267,56 @@ console.log('Arrays');
 //console.log(arr1.every(x => typeof(x) === 'string'));
 //console.log(arr2.every(x => typeof(x) === 'string'));
 
+//------------------Homework--------------------//
+
+/*
+
+// 0) Создать массив из строк и чисел.
+// 1) На его основе создать два массива - только числа и только строки.
+// 2) Численный массив отсортировать по возрастанию.
+// 3) В строковом - посчитать гласные.
+
+// 0
+// Создаем массив рандомной величины и заполняем его рандомными значениями
+let array = new Array(Math.round(Math.random() * 10) + 1);
+for(i = 0; i <= array.length - 1; i++)
+{
+    array[i] = Math.round(Math.random()*10);
+}
+
+console.log("Длина массива = " + array.length)
+console.log("Числовые элементы массива: " + array);
+
+// Половину массива (в рандомном месте) заменяем строкой
+for(i = 0; i <= Math.floor(array.length / 2); i++)
+{
+    array[Math.floor(Math.random()*array.length)] = "EPAM";
+}
+
+console.log("Элементы массива после добавления строк: " + array);
+
+// 1
+var numbers = array.filter(x => typeof(x) === 'number');
+var strings = array.filter(x => typeof(x) === 'string');
+
+// 2
+console.log("Сортированные числа: " + numbers.sort((e1,e2) => e1-e2));
+console.log("Строки: " + strings);
+
+// 3
+// Все гласные в English
+var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+
+// 3.1
+console.log("Гласные в строках: " + [...strings.join('')].filter(val => vowels.some(x => x === val.toLowerCase())));
+
+// 3.2
+var arr = new Array();
+function z (m) { arr.push(m.split('').filter(val => vowels.some(x => x === val.toLowerCase()))); }
+strings.forEach( e => z(e));
+console.log("Гласные в строках: " + arr);
+
+*/
 
 
 
