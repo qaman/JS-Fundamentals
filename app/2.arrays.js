@@ -269,7 +269,6 @@ console.log('Arrays');
 
 //------------------Homework--------------------//
 
-/*
 
 // 0) Создать массив из строк и чисел.
 // 1) На его основе создать два массива - только числа и только строки.
@@ -316,7 +315,6 @@ function z (m) { arr.push(m.split('').filter(val => vowels.some(x => x === val.t
 strings.forEach( e => z(e));
 console.log("Гласные в строках: " + arr);
 
-*/
 
 
 
