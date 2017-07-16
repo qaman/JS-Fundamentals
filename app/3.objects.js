@@ -397,6 +397,7 @@ var today2 = today2.toLocaleString("en-US", options)
 console.log(today2);
 */
 
+
 // Task 11
 // Есть строка «15.03.2016». Создать на ее основе объект Date
 
@@ -406,6 +407,7 @@ var parts = date.split(".");
 var dateObj = new Date(+parts[2], (+parts[1] - 1), (+parts[0] + 1));
 console.log(dateObj);
 */
+
 
 // Task 12
 // Создать объект Date, который содержит завтрашнюю дату, первое число текущего
@@ -423,15 +425,28 @@ console.log(firstDay);
 console.log(lastDay);
 */
 
+
 // Task 13
 // Измерить время суммирования чисел от 1 до 1000.
 
+/*
+var start = new Date();
+for (var i = 1; i <= 100000; i++) { i += 1; }
+var end = new Date();
+console.log(`${end - start} ms`);
+*/
 
 
 // Task 14
 // Подсчитать количество дней с текущей даты до Нового года
 
-
+/*
+var oneDay=1000*60*60*24;
+var today = new Date();  
+var ny = new Date(2018, 0, 1);
+var difference = ny - today; 
+console.log(`До НГ осталось ${Math.round(difference/oneDay)} дней`); 
+*/
 
 
 
