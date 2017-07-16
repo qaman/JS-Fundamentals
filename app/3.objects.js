@@ -384,8 +384,18 @@ tl.printAll();
 // Task 10
 // Создать текущую дату и вывести ее в формате dd.mm.yyyy и dd Month yyyy
 
+/*
+var today = new Date();
+var month = today.getMonth()+1;
+var day = today.getDate();
+var today = `${today.getFullYear()}.${(month<10 ? '0' : '') + month}.${(day<10 ? '0' : '') + day}`;
+console.log(today);
 
-
+var today2 = new Date();
+var options = { year: 'numeric', month:'long', day: 'numeric', timezone: 'UTC' };
+var today2 = today2.toLocaleString("en-US", options)
+console.log(today2);
+*/
 
 // Task 11
 // Есть строка «15.03.2016». Создать на ее основе объект Date
