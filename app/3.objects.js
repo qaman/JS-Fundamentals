@@ -400,14 +400,28 @@ console.log(today2);
 // Task 11
 // Есть строка «15.03.2016». Создать на ее основе объект Date
 
-
-
+/*
+var date = "15.03.2016";
+var parts = date.split(".");
+var dateObj = new Date(+parts[2], (+parts[1] - 1), (+parts[0] + 1));
+console.log(dateObj);
+*/
 
 // Task 12
 // Создать объект Date, который содержит завтрашнюю дату, первое число текущего
 // месяца, последнее число текущего месяца
 
-
+/*
+var currentDate = new Date();
+console.log(currentDate);
+currentDate.setDate(currentDate.getDate() + 1);
+console.log(currentDate);
+var today = new Date();
+var firstDay = new Date(today.getFullYear(), date.getMonth() + 1, 1).toLocaleString({ timezone: 'UTC' });
+var lastDay = new Date(today.getFullYear(), date.getMonth() + 2, 0).toLocaleString({ timezone: 'UTC' });
+console.log(firstDay);
+console.log(lastDay);
+*/
 
 // Task 13
 // Измерить время суммирования чисел от 1 до 1000.
